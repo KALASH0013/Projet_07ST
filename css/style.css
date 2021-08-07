@@ -1,0 +1,405 @@
+/*Style CSS */
+
+/*====== PAGE ===============================================================================================================================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+a {
+    color: #DFDFDF;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: 2px solid;
+    outline-offset: .15em;
+}
+
+/*========== MENU ===========================================================================================================================================*/
+/* partie menu*/
+#menu {
+    position: relative;
+    max-height: 10%;
+    width: 100%;
+    padding : 1%;
+    text-align: center;
+    background-color: #e3482d;
+    z-index: 2;
+}
+
+/* refresh */
+#refreshId  {
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #121212;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+/* mise en page partie recherche */
+#autocompleteId {
+    width: 60%;
+    text-align: left;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #121212;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+/* menu déroulant */
+#filterId {
+    float: right;
+    width: 15%;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #121212;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+/*========== PARTIE GAUCHE ==================================================================================================================================*/
+/* mise en page partie item */
+#sidebarId {
+    max-height: 90%;
+    width: 32%;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    padding-right: 2%;
+    background-color: #FFFFFF;
+    border-bottom: solid;
+    border-color: #EFEFF4;
+    border-width: 1px;
+    visibility: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position : absolute;
+    z-index: 1;
+}
+
+/* mise en page partie item */
+.item {
+    width: 110%;
+    height: 0px;
+    padding-left: 1%;
+    margin-right: 10%;
+    padding-right: 9%;
+    background-color: #FFFFFF;
+    border-bottom: solid;
+    border-color: #EFEFF4;
+    border-width: 1px;
+    color : #e3482d;
+    font-size: 0.8em;
+    display: block;
+    overflow: auto;
+    transition: backgroundAnimation;
+    transition-property: height;
+    transition-duration: 2s;
+}
+
+@keyframes backgroundAnimation {
+    from {background-color: #FFFFFF;}
+    to {background-color: #DCEDF9;}
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    margin-right: 6%;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.itemNameClass{
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.itemRatingClass {
+   visibility: hidden;
+}
+
+.itemCommentInfoClass {
+    max-width: 100%;
+    float: left;
+}
+
+.itemCommentAuthorClass, .commentNameClass {
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.itemCommentTimeClass {
+    max-width: 100%;
+    font-style: italic;
+}
+
+.itemCommentClassNode {
+    display: none;
+    transition-property: height;
+    transition-duration: 2s;
+}
+
+
+/* Modal comments */
+#buttonModalAddCommentId {
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: #191919;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    display: none;
+}
+
+.modal-header {
+    background-color: #e3482d;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+}
+
+.modal-body {
+    background-color: #F4F9FC;
+    font-size: 0.8em;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+}
+
+#buttonModalValidCommentId, #buttonModalAddCloseId {
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    color: #191919;
+    background-color: #e3482d;
+    border-color: #e3482d;
+}
+
+
+/*========== PARTIE MAP =====================================================================================================================================*/
+/* mise en page partie carte */
+#map {
+    height: 79%;
+    width: 60%;
+    padding: 0;
+    float: right;
+    background-color: #121212;
+    position: relative;
+    z-index: 3;
+}
+
+
+/*========== FOOTER ==========================================================================================================================================*/
+/* mise en page partie footer */
+#footerId{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    padding-top: 2%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #e3482d;
+    z-index: 2;
+}
+
+#buttonModal1AddCommentId {
+    float: right;
+    margin-right: 5%;
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: bold;
+    color:  #121212;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+/*============================================================================================================================================================*/
+/*========== MEDIA QUERIES ===================================================================================================================================*/
+/*============================================================================================================================================================*/
+/*========== ECRAN SUPERIEUR A 1024px ========================================================================================================================*/ -->
+ @media all and (max-width: 1024px)
+{
+    *{
+        width: auto;
+
+    }
+
+    #menu {
+        max-height: 8%;
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+    }
+
+    /* mise en page partie recherche */
+    #autocompleteId {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        max-width: 40%;
+        text-align: center;
+        color: #191919;
+        font-size: 10px;
+    }
+
+    /* refresh */
+    #refreshId {
+        max-width: 30%;
+        float: left;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+        color: #191919;
+        font-size: 10px;
+    }
+
+    /* menu déroulant */
+    #filterId {
+        width: 30%;
+        float: right;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+        color: #191919;
+        font-size: 10px;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #sidebarId {
+        width: 110%;
+        height: 38%;
+        padding-left: -1%;
+        margin: 0;
+        position: fixed;
+        left: 0;
+        bottom: 8%;
+        background-color: #e3482d;
+        z-index: 2;
+    }
+
+    #jsonId {
+        width: 105%;
+        height: 42%;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        left: 0;
+        bottom: 8%;
+    }
+
+    #buttonChargerJsonId {
+        width: 30%;
+        margin: 1%;
+        text-align: center;
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: bold;
+        color: #191919;
+        background-color: #121212;
+        border-color: #121212;
+        position: fixed;
+        left: 0;
+        bottom: 8%;
+        z-index: 2;
+    }
+
+    .item {
+        width: 100%;
+        padding-left: 1%;
+        margin-right: 10%;
+        padding-right: 9%;
+        background-color: #FFFFFF;
+        border-bottom: solid;
+        border-color: #EFEFF4;
+        border-width: 1px;
+        color : #e3482d;
+        text-align: justify-all;
+        font-size: 0.8em;
+        display: block;
+        overflow: auto;
+        transition-property: height;
+        transition-duration: 2s;
+    }
+
+    .itemCommentAuthorClass, .commentNameClass {
+        min-width: 10%;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .itemCommentTimeClass {
+        min-width: 10%;
+        text-align: left;
+        float: left;
+    }
+
+    #map {
+        width: 100%;
+        height: 47%;
+        background-color: #e3482d;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    #footerId {
+        width: 100%;
+        background-color: #e3482d;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        max-height: 8%;
+    }
+
+    #buttonModal1AddCommentId {
+        float: right;
+        width: 30%;
+        margin-right: 2%;
+        text-align: center;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+        font-size: 8px;
+    }
+
+}
