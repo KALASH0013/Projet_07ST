@@ -35,12 +35,12 @@ Comment.prototype.initHtml = function () {
         commentNode.querySelector('.commentRatingClass').style.display = "none";
         var starElm = commentNode.querySelector('.commentCommentImg');
         starElm.id = "starElmID";
-        if (x === 1) {starElm.src = "../img/1_star.png";}
-        else if (x === 2) {starElm.src = "../img/2_stars.png";}
-        else if (x === 3) {starElm.src = "../img/3_stars.png";}
-        else if (x === 4) {starElm.src = "../img/4_stars.png";}
-        else if (x === 5) {starElm.src = "../img/5_stars.png";}
-        else {starElm.src = "../img/0_star.png";};
+        if (x === 1) {starElm.src = "img/1_star.png";}
+        else if (x === 2) {starElm.src = "img/2_stars.png";}
+        else if (x === 3) {starElm.src = "img/3_stars.png";}
+        else if (x === 4) {starElm.src = "img/4_stars.png";}
+        else if (x === 5) {starElm.src = "img/5_stars.png";}
+        else {starElm.src = "img/0_star.png";};
         var starElm = commentNode.insertBefore(starElm, commentNode.querySelector('.commentCommentClass'));
         // modal comment
         self.itemNode.querySelector('#buttonModalAddCommentId').display = "none";

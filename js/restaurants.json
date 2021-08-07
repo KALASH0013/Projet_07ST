@@ -1,0 +1,83 @@
+[
+    {
+       "restaurantName":"La Bonne Mère",
+       "address":"16 Rue Fort du Sanctuaire, 13006 Marseille",
+       "lat":43.28367,
+       "long":5.37377,
+       "ratings":[
+          {
+             "stars":4,
+             "comment":"Très bon moment dans ce restaurant."
+          },
+          {
+             "stars":5,
+             "comment":"Succulente cuisine !"
+          }
+       ]
+    },
+    {
+       "restaurantName":"Chez Marco",
+       "address":"CORNICHE KENNEDY, 13007 Marseille",
+       "lat":43.27347,
+       "long":5.36297,
+       "ratings":[
+          {
+             "stars":5,
+             "comment":"Lieux simple et très sympa au dessus de la plage du prophète."
+          },
+          {
+             "stars":3,
+             "comment":"Les plats proposés sont bons."
+          }
+       ]
+    },
+    {
+       "restaurantName":"L'escapade Marseillaise",
+       "address":"134 Rue Paradis, 13006 Marseille",
+       "lat":43.28785,
+       "long":5.38058,
+       "ratings":[
+          {
+             "stars":5,
+             "comment":"Très beau lieu, très original. Des desserts succulents, un très bon choix de thé aussi. Un accueil toujours aussi chaleureux.↵Je recommande fortement, ce sera un moment de partage très agréable."
+          },
+          {
+             "stars":4,
+             "comment":"Bon resto entre amis"
+          }
+       ]
+    },
+    {
+       "restaurantName":"Epuisette",
+       "address":"Vallon des Auffes, 13007 Marseille",
+       "lat":43.28593,
+       "long":5.35036,
+       "ratings":[
+          {
+             "stars":4,
+             "comment":"Restaurant exceptionnel pour sa cuisine et son emplacement."
+          },
+          {
+             "stars":2,
+             "comment":"Restaurant exceptionnel - La vue et le cadre sont à couper le souffle - on dîne avec vue sur la mer et le soleil couchant."
+          }
+       ]
+    },
+    {
+       "restaurantName":"Le Rhul",
+       "address":"269 Corniche Président John Fitzgerald Kennedy, 13007 Marseille",
+       "lat":43.28027,
+       "long":5.35454,
+       "ratings":[
+          {
+             "stars":4,
+             "comment":"Excellent restaurant. Accueil super, personnel "
+          },
+          {
+             "stars":5,
+             "comment":"Excellent, endroit magique ou l'on peut manger une délicieuse bouillabaisse."
+          }
+       ]
+    }   
+ ]
+ 

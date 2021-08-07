@@ -87,12 +87,12 @@ Item.prototype.initHtml = function () {
      * Affichage du png correspondant à la note moyenne de l'item avant l' adresse 
      * @param  {number} (x) Note moyenne
      */
-    if (x === 1) {starElm.src = "../img/1_star.png";}
-    else if (x === 2) {starElm.src = "../img/2_stars.png";}
-    else if (x === 3) {starElm.src = "../img/3_stars.png";}
-    else if (x === 4) {starElm.src = "../img/4_stars.png";}
-    else if (x === 5) {starElm.src = "../img/5_stars.png";}
-    else {starElm.src = "../img/0_star.png";};
+    if (x === 1) {starElm.src = "img/1_star.png";}
+    else if (x === 2) {starElm.src = "img/2_stars.png";}
+    else if (x === 3) {starElm.src = "img/3_stars.png";}
+    else if (x === 4) {starElm.src = "img/4_stars.png";}
+    else if (x === 5) {starElm.src = "img/5_stars.png";}
+    else {starElm.src = "img/0_star.png";};
     var starElm = self.itemNode.insertBefore(starElm, self.itemNode.querySelector('.itemVicinityClass'));
     /**
      * Chargement d'une photo de l' item et la masque avant la note moyenne 
@@ -109,7 +109,7 @@ Item.prototype.initHtml = function () {
      */
     var closeElm = document.createElement('IMG');
     closeElm.className = "close";
-    closeElm.src = "../img/close.png";
+    closeElm.src = "img/close.png";
     closeElm.style.display = "none";
     var closeElm = self.itemNode.insertBefore(closeElm, self.itemNode.querySelector('.itemVicinityClass'));
     /**
@@ -268,17 +268,17 @@ Item.prototype.getDetails = function() {
                      * Affichage d'un png correspondant à la note du commentaire et l' insertion avant l' adresse
                      * @param  {number} (x) La note du commentaire
                      */
-                    if (x === 1) {starElm.src = "../img/1_star.png";}
-                    else if (x === 2) {starElm.src = "../img/2_stars.png";}
-                    else if (x === 3) {starElm.src = "../img/3_stars.png";}
-                    else if (x === 4) {starElm.src = "../img/4_stars.png";}
-                    else if (x === 5) {starElm.src = "../img/5_stars.png";}
-                    else {starElm.src = "../img/0_star.png";};
+                    if (x === 1) {starElm.src = "img/1_star.png";}
+                    else if (x === 2) {starElm.src = "img/2_stars.png";}
+                    else if (x === 3) {starElm.src = "img/3_stars.png";}
+                    else if (x === 4) {starElm.src = "img/4_stars.png";}
+                    else if (x === 5) {starElm.src = "img/5_stars.png";}
+                    else {starElm.src = "img/0_star.png";};
                     var starElm = self.commentNode.insertBefore(starElm, self.commentNode.querySelector('.itemCommentClass'));
                     self.itemNode.appendChild(self.commentNode);
                 }
             } else {
-              
+                console.log('request status :' ,status);
             }
         }
     }

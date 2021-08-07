@@ -33,7 +33,7 @@ myMap.prototype.initMap = function () {
         animation: google.maps.Animation.DROP,
         icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
     })
-    this.getJson("restaurants.json");
+    this.getJson("js/restaurants.json");
     this.PlaceService = new google.maps.places.PlacesService(this.map);
     this.geolocation();
     this.autocomplete();
@@ -56,11 +56,11 @@ myMap.prototype.ajaxGet = function (url, callback) {
             // Appelle la fonction callback en lui passant la réponse de la requête
             callback(req.responseText);
         } else {
-           
+            console.error(req.status + " " + req.statusText + " " + url);
         }
     });
     req.addEventListener("error", function () {
-        
+        console.error("Erreur réseau avec l'URL " + url);
     });
     req.send(null);
 }
@@ -138,7 +138,7 @@ myMap.prototype.geolocation = function () {
             var marker = new google.maps.Marker({
                 position: pos,
                 map: self.map,
-                title:"vous êtes ici",
+                title:"Ici",
                 animation: google.maps.Animation.DROP,
                 icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
             })
@@ -180,7 +180,7 @@ myMap.prototype.autocomplete = function () {
         var marker = new google.maps.Marker({
             position: position,
             map: self.map,
-            title:"vous êtes ici",
+            title:"Ici",
             animation: google.maps.Animation.DROP,
             icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
         })
