@@ -28,7 +28,7 @@ App.prototype.refresh = function () {
 
 
 /**
- * Bouton filter des notes
+ * Bouton filtrage  des notes
  */
 App.prototype.filterListener = function () {
     var self = this;
@@ -51,7 +51,7 @@ App.prototype.filterListener = function () {
  * @param  {number} (maxStars) permet le nombre d' étoile max autorisé à notre filtre
  */
 App.prototype.filter = function(maxStars){
-    // console.log('nombre d'étoiles : ', maxStars);
+    // c.l ('nombre d'étoiles : ', maxStars);
   var self = this;
     for(var i = 0; i < self.listItem.children.length; i++ ) {
         var itemStars = self.listItem.children[i].querySelector('.itemRatingClass');

@@ -190,14 +190,18 @@ a:focus {
     border-style: solid;
     border-color: #FFFFFF;
     border-width: 1px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .modal-body {
-    background-color: #F4F9FC;
+    background-color: #4c4c4d;
     font-size: 0.8em;
     border-style: solid;
     border-color: #FFFFFF;
     border-width: 1px;
+    text-align: center;
+    color:#FFFFFF;
 }
 
 #buttonModalValidCommentId, #buttonModalAddCloseId {

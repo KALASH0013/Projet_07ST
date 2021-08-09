@@ -29,11 +29,11 @@ myMap.prototype.initMap = function () {
     var marker = new google.maps.Marker({
         position: pos,
         map: this.map,
-        title:"Ici",
+        title:" vous êtes ici",
         animation: google.maps.Animation.DROP,
-        icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
+        icon: ''
     })
-    this.getJson("js/restaurants.json");
+    this.getJson("restaurants.json");
     this.PlaceService = new google.maps.places.PlacesService(this.map);
     this.geolocation();
     this.autocomplete();
@@ -56,12 +56,11 @@ myMap.prototype.ajaxGet = function (url, callback) {
             // Appelle la fonction callback en lui passant la réponse de la requête
             callback(req.responseText);
         } else {
-            console.error(req.status + " " + req.statusText + " " + url);
+           
         }
     });
     req.addEventListener("error", function () {
-        console.error("Erreur réseau avec l'URL " + url);
-    });
+            });
     req.send(null);
 }
 
@@ -92,7 +91,7 @@ myMap.prototype.getJson = function (url) {
              * @param {number} (id)           L' identifiant de l' item
              * @param {object} (location)     La latitude et longitude de l' item
              * @param {string} (name)         Le nom de l' item
-             * @param {string} (vicinity)     L' adresse de l' item
+             * @param {string} ( v)           L' adresse de l' item
              * @param {number} (rating)       La note moyenne de l' item
              * @param {object} (photos)       Photo retourné par l' API de l' item
              * @param {object} (commentsJson) Indique si l' item est à prendre dans la base JSON ou dans l'API
@@ -138,9 +137,9 @@ myMap.prototype.geolocation = function () {
             var marker = new google.maps.Marker({
                 position: pos,
                 map: self.map,
-                title:"Ici",
+                title:"ici",
                 animation: google.maps.Animation.DROP,
-                icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
+                icon: '../img/restaurants.png'
             })
             /**
              * Utilisation de nearbySearch
@@ -182,7 +181,7 @@ myMap.prototype.autocomplete = function () {
             map: self.map,
             title:"Ici",
             animation: google.maps.Animation.DROP,
-            icon: 'https://cdn3.iconfinder.com/data/icons/mapicons/icons/restaurant.png'
+            icon: '../img/restaurants.png'
         })
         /**
          * Utilisation de nearbySearch
